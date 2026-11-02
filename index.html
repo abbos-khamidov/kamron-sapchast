@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Камрон — курьер-астронавт</title>
+  <meta name="description" content="Камрон Сапчаст — астронавт, который развозит еду в Яндексе. Горячее — горячим, с орбитальной точностью.">
+  <meta name="theme-color" content="#14123a">
+  <meta property="og:title" content="Камрон — курьер-астронавт">
+  <meta property="og:description" content="Развожу еду в Яндексе. Горячее — горячим, с орбитальной точностью.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9A%80%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="planet planet--a" aria-hidden="true"></div>
+  <div class="planet planet--b" aria-hidden="true"></div>
+
+  <main class="card">
+    <section class="hero">
+      <div class="hero__text">
+        <p class="badge">Курьер · Яндекс Еда</p>
+        <h1>Камрон<br><span>Сапчаст</span></h1>
+        <p class="lead">Астронавт на земной орбите доставки. Привезу еду горячей, даже если ради неё придётся выйти в открытый космос.</p>
+        <a class="btn btn--primary" href="#contact">Заказать доставку</a>
+      </div>
+
+      <div class="hero__art" aria-hidden="true">
+        <svg class="astro" viewBox="0 0 240 280" role="img" aria-label="Астронавт с коробкой доставки">
+          <!-- delivery box -->
+          <g class="box">
+            <rect x="26" y="96" width="70" height="86" rx="10" fill="#ffdd2d"/>
+            <rect x="26" y="96" width="70" height="22" rx="10" fill="#ffc400"/>
+            <rect x="40" y="132" width="42" height="8" rx="4" fill="#14123a" opacity=".85"/>
+            <rect x="40" y="148" width="28" height="8" rx="4" fill="#14123a" opacity=".5"/>
+          </g>
+          <!-- legs -->
+          <rect x="88" y="196" width="26" height="54" rx="13" fill="#f4f1ff"/>
+          <rect x="124" y="196" width="26" height="54" rx="13" fill="#f4f1ff"/>
+          <rect x="84" y="236" width="34" height="18" rx="9" fill="#ff5a7a"/>
+          <rect x="120" y="236" width="34" height="18" rx="9" fill="#ff5a7a"/>
+          <!-- arms -->
+          <rect x="52" y="124" width="26" height="62" rx="13" fill="#f4f1ff" transform="rotate(18 65 124)"/>
+          <rect x="160" y="124" width="26" height="62" rx="13" fill="#f4f1ff" transform="rotate(-24 173 124)"/>
+          <circle cx="62" cy="186" r="12" fill="#ff5a7a"/>
+          <circle cx="182" cy="178" r="12" fill="#ff5a7a"/>
+          <!-- body -->
+          <rect x="76" y="108" width="88" height="100" rx="30" fill="#ffffff"/>
+          <rect x="96" y="132" width="48" height="30" rx="8" fill="#6c5cff"/>
+          <circle cx="108" cy="147" r="5" fill="#3ee0b0"/>
+          <circle cx="124" cy="147" r="5" fill="#ffdd2d"/>
+          <rect x="82" y="188" width="76" height="10" rx="5" fill="#ffdd2d"/>
+          <!-- helmet -->
+          <circle cx="120" cy="72" r="54" fill="#ffffff"/>
+          <circle cx="120" cy="72" r="42" fill="url(#visor)"/>
+          <path d="M92 52 Q104 40 122 42" stroke="#fff" stroke-width="5" stroke-linecap="round" fill="none" opacity=".7"/>
+          <circle cx="106" cy="76" r="4.5" fill="#fff"/>
+          <circle cx="134" cy="76" r="4.5" fill="#fff"/>
+          <path d="M108 90 Q120 99 132 90" stroke="#fff" stroke-width="4" stroke-linecap="round" fill="none"/>
+          <defs>
+            <linearGradient id="visor" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#6c5cff"/>
+              <stop offset=".6" stop-color="#2b1f8f"/>
+              <stop offset="1" stop-color="#14123a"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </section>
+
+    <section class="facts" aria-label="Почему я">
+      <article class="fact fact--yellow">
+        <h2>Горячее — горячим</h2>
+        <p>Термосумка и холодная голова. Остывает только космос.</p>
+      </article>
+      <article class="fact fact--coral">
+        <h2>Бережно</h2>
+        <p>Суп не расплещется: невесомость — моя рабочая среда.</p>
+      </article>
+      <article class="fact fact--mint">
+        <h2>Вежливо</h2>
+        <p>Позвоню, поздороваюсь и передам заказ в руки. Скафандр сниму по желанию.</p>
+      </article>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>На связи</h2>
+      <p>Контакты можно заменить на настоящие в файле <code>index.html</code>.</p>
+      <div class="contact__links">
+        <a class="btn btn--primary" href="tel:+998000000000">Позвонить</a>
+        <a class="btn" href="https://t.me/" target="_blank" rel="noopener">Telegram</a>
+        <a class="btn" href="https://eda.yandex.ru/" target="_blank" rel="noopener">Яндекс Еда</a>
+      </div>
+    </section>
+
+    <footer>© Камрон Сапчаст · Принято к доставке с орбиты</footer>
+  </main>
+</body>
+</html>
